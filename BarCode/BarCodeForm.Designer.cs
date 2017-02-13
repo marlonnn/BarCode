@@ -1,6 +1,6 @@
 ﻿namespace BarCode
 {
-    partial class Form1
+    partial class BarCodeForm
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -28,9 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BarCodeForm));
+            this.SuspendLayout();
+            // 
+            // BarCodeForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(533, 476);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "BarCodeForm";
+            this.Text = "BarCode";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

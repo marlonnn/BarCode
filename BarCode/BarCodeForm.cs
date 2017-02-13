@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BarCode
 {
-    public partial class Form1 : Form
+    public partial class BarCodeForm : Form
     {
-        public Form1()
+        public BarCodeForm()
         {
             InitializeComponent();
         }
