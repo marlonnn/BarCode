@@ -14,9 +14,16 @@ namespace BarCode
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BarCodeForm());
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new BarCodeForm());
+            }
+            catch (Exception ee)
+            {
+                MessageBox.Show(ee.StackTrace, "Exception", MessageBoxButtons.OK);
+            }
         }
     }
 }

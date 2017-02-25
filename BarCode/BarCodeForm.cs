@@ -19,7 +19,9 @@ namespace BarCode
         private int codeWidth = 300;
         private int codeHeight = 150;
 
+        //条形码/二维码图像对象
         private Bitmap barCodeImage = null;
+        //保存图片格式
         private ImageFormat imageformat;
 
         public BarCodeForm()
@@ -36,9 +38,9 @@ namespace BarCode
                 this.cbEncodeType.DataSource = System.Enum.GetNames(typeof(BarcodeFormat));
                 this.cbEncodeType.SelectedIndex = 4;
             }
-            catch (Exception exception)
+            catch (Exception ee)
             {
-
+                MessageBox.Show(ee.StackTrace, "Exception", MessageBoxButtons.OK);
             }
         }
 
@@ -75,6 +77,7 @@ namespace BarCode
             }
             catch (Exception ee)
             {
+                MessageBox.Show(ee.StackTrace, "Exception", MessageBoxButtons.OK);
             }
         }
 
@@ -87,6 +90,7 @@ namespace BarCode
             }
             catch (Exception ee)
             {
+                MessageBox.Show(ee.StackTrace, "Exception", MessageBoxButtons.OK);
             }
         }
 
