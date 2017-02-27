@@ -50,7 +50,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Barcode.cs" />
     <Compile Include="BarCodeForm.cs">
       <SubType>Form</SubType>
     </Compile>
